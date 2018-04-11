@@ -37,9 +37,9 @@ matrix[i][j] will be integers in range [0, 99].
  */
 class Solution {
     fun isToeplitzMatrix(matrix: Array<IntArray>): Boolean {
-        matrix.forEachIndexed {i, array ->
+        matrix.forEachIndexed { i, array ->
             array.forEachIndexed { j, value ->
-                if (i > 0 && j > 0 && value != matrix[i-1][j-1]) return false
+                if (i > 0 && j > 0 && value != matrix[i - 1][j - 1]) return false
             }
         }
         return true
