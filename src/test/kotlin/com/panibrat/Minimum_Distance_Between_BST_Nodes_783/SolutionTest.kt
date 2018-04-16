@@ -1,5 +1,6 @@
 package com.panibrat.Minimum_Distance_Between_BST_Nodes_783
 
+import com.panibrat.Common.TreeNode
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 

@@ -1,5 +1,6 @@
 package com.panibrat.Minimum_Distance_Between_BST_Nodes_783
 
+import com.panibrat.Common.TreeNode
 import java.util.*
 import kotlin.collections.ArrayList
 

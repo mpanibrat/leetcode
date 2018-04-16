@@ -1,4 +1,4 @@
-package com.panibrat.Minimum_Distance_Between_BST_Nodes_783
+package com.panibrat.Common
 
 /**
  * Definition for a binary tree node.
