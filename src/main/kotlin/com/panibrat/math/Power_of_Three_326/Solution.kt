@@ -20,8 +20,14 @@ class Solution {
     }
 
     fun isPowerOfThreeFollowUp(n: Int): Boolean {
+        val exponent = Math.floor(Math.log10(Int.MAX_VALUE.toDouble()) / Math.log10(3.0)) // 19
+        val maxValue = Math.pow(3.0, exponent).toInt() // 1162261467
+        return n > 0 && maxValue % n == 0
+    }
+
+    fun isPowerOfThreeFollowUpDoublePrecision(n: Int): Boolean {
         if (n < 1) return false
         val exponent = Math.log10(n.toDouble()) / Math.log10(base.toDouble())
-        return exponent == Math.ceil(exponent)
+        return exponent == Math.floor(exponent)
     }
 }

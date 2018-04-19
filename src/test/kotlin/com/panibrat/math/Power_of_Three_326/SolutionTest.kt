@@ -14,6 +14,11 @@ internal class SolutionTest {
     }
 
     @Test
+    fun isPowerOfThree243() {
+        assertTrue(sol.isPowerOfThree(243))
+    }
+
+    @Test
     fun isPowerOfThreeNegative() {
         assertFalse(sol.isPowerOfThree(-3))
     }
@@ -29,6 +34,11 @@ internal class SolutionTest {
     }
 
     @Test
+    fun isPowerOfThreeFollowUp243() {
+        assertTrue(sol.isPowerOfThreeFollowUp(243))
+    }
+
+    @Test
     fun isPowerOfThreeFollowUpNegative() {
         assertFalse(sol.isPowerOfThreeFollowUp(-3))
     }
@@ -36,5 +46,25 @@ internal class SolutionTest {
     @Test
     fun isPowerOfThreeFollowUpZero() {
         assertFalse(sol.isPowerOfThreeFollowUp(0))
+    }
+
+    @Test
+    fun isPowerOfThreeFollowUpDoublePrecision27() {
+        assertTrue(sol.isPowerOfThreeFollowUpDoublePrecision(27))
+    }
+
+    @Test
+    fun isPowerOfThreeFollowUpDoublePrecision243() {
+        assertTrue(sol.isPowerOfThreeFollowUpDoublePrecision(243))
+    }
+
+    @Test
+    fun isPowerOfThreeFollowUpDoublePrecisionNegative() {
+        assertFalse(sol.isPowerOfThreeFollowUpDoublePrecision(-3))
+    }
+
+    @Test
+    fun isPowerOfThreeFollowUpDoublePrecisionZero() {
+        assertFalse(sol.isPowerOfThreeFollowUpDoublePrecision(0))
     }
 }
