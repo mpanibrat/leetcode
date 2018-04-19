@@ -1,5 +1,7 @@
 package com.panibrat.math.Add_Strings_415
 
+import com.panibrat.utils.digitAt
+
 /*
 415. Add Strings
 
@@ -26,13 +28,4 @@ class Solution {
         }
         return builder.reverse().toString()
     }
-}
-
-private fun String.digitAt(index: Int): Int {
-    if (index !in this.indices) return 0
-    return this[index].asDigit()
-}
-
-private fun Char.asDigit(): Int {
-    return this - '0'
 }
