@@ -37,9 +37,9 @@
 - 246 Strobogrammatic Number
 - 66 Plus One
 - 482 License Key Formatting
-
-### ToDO
 - 345 Reverse Vowels of a String
+
+### TODO
 - 734 Sentence Similarity
 - 758 Bold Words in String
 - 459 Repeated Substring Pattern
