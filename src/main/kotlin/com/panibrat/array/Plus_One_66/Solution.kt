@@ -11,7 +11,7 @@ You may assume the integer does not contain any leading zero, except the number 
 
 Example 1:
 
-Input: [1,2,3]
+Input: [1,485,3]
 Output: [1,2,4]
 Explanation: The array represents the integer 123.
 Example 2:

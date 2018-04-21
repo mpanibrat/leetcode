@@ -1,4 +1,4 @@
-package com.panibrat.bitManipulation.Binary_Watch_401
+package com.panibrat.backtracking.Binary_Watch_401
 
 /*
 401. Binary Watch

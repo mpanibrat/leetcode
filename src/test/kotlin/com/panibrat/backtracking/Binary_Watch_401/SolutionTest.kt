@@ -1,4 +1,4 @@
-package com.panibrat.bitManipulation.Binary_Watch_401
+package com.panibrat.backtracking.Binary_Watch_401
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
