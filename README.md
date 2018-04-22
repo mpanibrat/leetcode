@@ -40,9 +40,9 @@
 - 345 Reverse Vowels of a String
 - 734 Sentence Similarity
 - 758 Bold Words in String
+- 459 Repeated Substring Pattern
 
 ### TODO
-- 459 Repeated Substring Pattern
 - 501 Find Mode in Binary Search Tree
 - 643 Maximum Average Subarray I
 - 374 Guess Number Higher or Lower
