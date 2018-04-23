@@ -43,9 +43,9 @@
 - 459 Repeated Substring Pattern
 * 501 Find Mode in Binary Search Tree
 - 643 Maximum Average Subarray I
+- 374 Guess Number Higher or Lower
 
 ### TODO
-- 374 Guess Number Higher or Lower
 - 422 Valid Word Square
 - 276 Paint Fence
 - 20 Valid Parentheses
