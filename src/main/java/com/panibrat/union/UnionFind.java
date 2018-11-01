@@ -1,4 +1,4 @@
-package com.panibrat.algs;
+package com.panibrat.union;
 
 /**
  * Implementation of Union-Find aka Disjoint-Union data structure.
