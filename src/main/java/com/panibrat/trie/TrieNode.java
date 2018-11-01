@@ -1,17 +1,21 @@
 package com.panibrat.trie;
 
-public class TrieNode {
+import org.jetbrains.annotations.NotNull;
+
+import java.util.Iterator;
+
+public class TrieNode implements Iterable<TrieNode> {
   private static final int ALPHABET_SIZE = 26;
 
-  private TrieNode[] links;
+  private TrieNode[] children;
   private boolean isEnd;
 
   public TrieNode() {
-    links = new TrieNode[ALPHABET_SIZE];
+    children = new TrieNode[ALPHABET_SIZE];
   }
 
   public TrieNode get(char c) {
-    return links[c - 'a'];
+    return children[c - 'a'];
   }
 
   public boolean contains(char c) {
@@ -19,7 +23,7 @@ public class TrieNode {
   }
 
   public void put(char c, TrieNode node) {
-    links[c - 'a'] = node;
+    children[c - 'a'] = node;
   }
 
   public boolean isEnd() {
@@ -28,5 +32,28 @@ public class TrieNode {
 
   public void setEnd() {
     isEnd = true;
+  }
+
+  @NotNull
+  @Override
+  public Iterator<TrieNode> iterator() {
+    return new Iterator<TrieNode>() {
+
+      int index = 0;
+
+      @Override
+      public boolean hasNext() {
+        while (index < children.length) {
+          if (children[index] != null) return true;
+          index++;
+        }
+        return false;
+      }
+
+      @Override
+      public TrieNode next() {
+        return children[index++];
+      }
+    };
   }
 }
