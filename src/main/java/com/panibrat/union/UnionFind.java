@@ -1,8 +1,6 @@
 package com.panibrat.union;
 
-/**
- * Implementation of Union-Find aka Disjoint-Union data structure.
- */
+/** Implementation of Union-Find aka Disjoint-Union data structure. */
 public class UnionFind {
 
   private final int[] parent;
@@ -41,5 +39,4 @@ public class UnionFind {
     }
     return p;
   }
-
 }

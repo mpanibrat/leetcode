@@ -40,10 +40,12 @@ class Solution {
         hh = (hh + 1) % HOURS_IN_DAY;
       }
 
-      if (digit[hh / DECIMAL] && digit[hh % DECIMAL] && digit[mm / DECIMAL] && digit[mm % DECIMAL]) {
+      if (digit[hh / DECIMAL]
+          && digit[hh % DECIMAL]
+          && digit[mm / DECIMAL]
+          && digit[mm % DECIMAL]) {
         return String.format("%02d:%02d", hh, mm);
       }
     }
   }
 }
-

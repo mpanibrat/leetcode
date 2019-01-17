@@ -22,7 +22,6 @@ All inputs are guaranteed to be non-empty strings.
 
  */
 
-
 import com.panibrat.trie.TrieNode;
 
 public class Trie {
@@ -63,7 +62,6 @@ public class Trie {
     return searchPrefix(prefix) != null;
   }
 }
-
 
 /**
  * Your Trie object will be instantiated and called as such:

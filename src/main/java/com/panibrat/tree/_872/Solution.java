@@ -18,7 +18,6 @@ Both of the given trees will have between 1 and 100 nodes.
 */
 
 import com.panibrat.tree.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
 

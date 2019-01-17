@@ -37,7 +37,10 @@ words[i] will only consist of lowercase letters.
  */
 class Solution {
   public int uniqueMorseRepresentations(String[] words) {
-    String[] morse = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."};
+    String[] morse = {
+      ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--",
+      "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."
+    };
     Set<String> set = new HashSet<>();
     for (String word : words) {
       StringBuilder sb = new StringBuilder();

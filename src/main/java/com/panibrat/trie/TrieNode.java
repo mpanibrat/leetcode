@@ -1,7 +1,5 @@
 package com.panibrat.trie;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.Iterator;
 
 public class TrieNode implements Iterable<TrieNode> {
@@ -34,7 +32,6 @@ public class TrieNode implements Iterable<TrieNode> {
     isEnd = true;
   }
 
-  @NotNull
   @Override
   public Iterator<TrieNode> iterator() {
     return new Iterator<TrieNode>() {

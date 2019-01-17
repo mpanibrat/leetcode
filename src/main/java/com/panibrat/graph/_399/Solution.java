@@ -79,7 +79,6 @@ class Solution {
         map.put(parent, p2);
       }
     }
-
   }
 
   class Variable {
@@ -91,5 +90,4 @@ class Solution {
       this.ratio = ratio;
     }
   }
-
 }

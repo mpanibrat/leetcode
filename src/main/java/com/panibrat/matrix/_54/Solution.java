@@ -31,7 +31,9 @@ class Solution {
   public List<Integer> spiralOrder(int[][] matrix) {
     List<Integer> result = new ArrayList<>();
     if (matrix.length == 0) return result;
-    for (int r1 = 0, r2 = matrix.length - 1, c1 = 0, c2 = matrix[0].length - 1; r1 <= r2 && c1 <= c2; r1++, r2--, c1++, c2--) {
+    for (int r1 = 0, r2 = matrix.length - 1, c1 = 0, c2 = matrix[0].length - 1;
+        r1 <= r2 && c1 <= c2;
+        r1++, r2--, c1++, c2--) {
       for (int c = c1; c <= c2; c++) result.add(matrix[r1][c]);
       for (int r = r1 + 1; r <= r2; r++) result.add(matrix[r][c2]);
       if (r1 < r2 && c1 < c2) {
