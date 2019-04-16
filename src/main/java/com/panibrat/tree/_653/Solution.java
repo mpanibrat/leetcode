@@ -36,22 +36,30 @@ import java.util.List;
 
 /**
  * Definition for a binary tree node.
+ *
+ * <pre>{@code
  * public class TreeNode {
- * int val;
- * TreeNode left;
- * TreeNode right;
- * TreeNode(int x) { val = x; }
+ *   int val;
+ *   TreeNode left;
+ *   TreeNode right;
+ *   TreeNode(int x) { val = x; }
  * }
+ * }</pre>
  */
 class Solution {
   public boolean findTarget(TreeNode root, int k) {
     List<Integer> list = new ArrayList<>();
     traverse(root, list);
-    for (int i = 0, j = list.size() - 1; i < j; ) {
+    int i = 0;
+    int j = list.size() - 1;
+    while (i < j) {
       int sum = list.get(i) + list.get(j);
       if (sum == k) return true;
-      if (sum < k) i++;
-      else j--;
+      if (sum < k) {
+        i++;
+      } else {
+        j--;
+      }
     }
     return false;
   }

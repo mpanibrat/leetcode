@@ -1,4 +1,4 @@
-package com.panibrat.linkedList._21;
+package com.panibrat.linked_list._21;
 
 /*
 21. Merge Two Sorted Lists
@@ -11,31 +11,35 @@ Input: 1->2->4, 1->3->4
 Output: 1->1->2->3->4->4
  */
 
-import com.panibrat.linkedList.ListNode;
+import com.panibrat.linked_list.ListNode;
 
 /**
  * Definition for singly-linked list.
+ * <pre>
+ * {@code
  * public class ListNode {
- * int val;
- * ListNode next;
- * ListNode(int x) { val = x; }
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
  * }
+ * }
+ * </pre>
  */
 class Solution {
   public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
     ListNode head = new ListNode(0);
     ListNode prev = head;
     while (l1 != null && l2 != null) {
-      if (l1.val < l2.val) {
-        prev.next = l1;
-        l1 = l1.next;
+      if (l1.getVal() < l2.getVal()) {
+        prev.setNext(l1);
+        l1 = l1.getNext();
       } else {
-        prev.next = l2;
-        l2 = l2.next;
+        prev.setNext(l2);
+        l2 = l2.getNext();
       }
-      prev = prev.next;
+      prev = prev.getNext();
     }
-    prev.next = l1 == null ? l2 : l1;
-    return head.next;
+    prev.setNext(l1 == null ? l2 : l1);
+    return head.getNext();
   }
 }

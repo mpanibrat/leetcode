@@ -1,5 +1,7 @@
 package com.panibrat.trie._208;
 
+import com.panibrat.trie.TrieNode;
+
 /*
 208. Implement Trie (Prefix Tree)
 
@@ -22,8 +24,16 @@ All inputs are guaranteed to be non-empty strings.
 
  */
 
-import com.panibrat.trie.TrieNode;
-
+/**
+ * Your Trie object will be instantiated and called as such:
+ *
+ * <pre>{@code
+ * Trie obj = new Trie();
+ * obj.insert(word);
+ * boolean param_2 = obj.search(word);
+ * boolean param_3 = obj.startsWith(prefix);
+ * }</pre>
+ */
 public class Trie {
   private TrieNode root;
 
@@ -62,11 +72,3 @@ public class Trie {
     return searchPrefix(prefix) != null;
   }
 }
-
-/**
- * Your Trie object will be instantiated and called as such:
- * Trie obj = new Trie();
- * obj.insert(word);
- * boolean param_2 = obj.search(word);
- * boolean param_3 = obj.startsWith(prefix);
- */

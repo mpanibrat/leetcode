@@ -1,4 +1,7 @@
-apply plugin: 'java'
+plugins {
+    id "java"
+    id "org.sonarqube" version "2.7"
+}
 
 repositories {
     mavenCentral()
@@ -10,6 +13,5 @@ dependencies {
 
 test {
     useJUnit()
-
     maxHeapSize = '1G'
 }

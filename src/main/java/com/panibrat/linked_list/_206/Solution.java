@@ -1,4 +1,4 @@
-package com.panibrat.linkedList._206;
+package com.panibrat.linked_list._206;
 
 /*
 206. Reverse Linked List
@@ -16,22 +16,26 @@ A linked list can be reversed either iteratively or recursively. Could you imple
 
  */
 
-import com.panibrat.linkedList.ListNode;
+import com.panibrat.linked_list.ListNode;
 
 /**
  * Definition for singly-linked list.
+ * <pre>
+ * {@code
  * public class ListNode {
- * int val;
- * ListNode next;
- * ListNode(int x) { val = x; }
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
  * }
+ * }
+ * </pre>
  */
 class Solution {
-  public ListNode reverseListRec(ListNode head) {
-    if (head == null || head.next == null) return head;
-    ListNode node = reverseListRec(head.next);
-    head.next.next = head;
-    head.next = null;
+  private ListNode reverseListRec(ListNode head) {
+    if (head == null || head.getNext() == null) return head;
+    ListNode node = reverseListRec(head.getNext());
+    head.getNext().setNext(head);
+    head.setNext(null);
     return node;
   }
 
@@ -39,8 +43,8 @@ class Solution {
     ListNode prev = null;
     ListNode curr = head;
     while (curr != null) {
-      ListNode next = curr.next;
-      curr.next = prev;
+      ListNode next = curr.getNext();
+      curr.setNext(prev);
       prev = curr;
       curr = next;
     }

@@ -28,17 +28,20 @@ import java.util.Queue;
 
 /**
  * Definition for a binary tree node.
+ * <pre>
+ * {@code
  * public class TreeNode {
- * int val;
- * TreeNode left;
- * TreeNode right;
- * TreeNode(int x) { val = x; }
+ *   int val;
+ *   TreeNode left;
+ *   TreeNode right;
+ *   TreeNode(int x) { val = x; }
  * }
+ * }
+ * </pre>
  */
 class Solution {
   public boolean isSymmetric(TreeNode root) {
     return recursive(root, root);
-    // return iterative(root);
   }
 
   private boolean recursive(TreeNode p, TreeNode q) {
@@ -46,7 +49,7 @@ class Solution {
     return p.val == q.val && recursive(p.left, q.right) && recursive(p.right, q.left);
   }
 
-  private boolean iterative(TreeNode root) {
+  public boolean iterativeIsSymetric(TreeNode root) {
     Queue<TreeNode> queue = new LinkedList<>();
     queue.add(root);
     queue.add(root);

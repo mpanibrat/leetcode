@@ -1,4 +1,4 @@
-package com.panibrat.bitManipulation._136;
+package com.panibrat.bit_manipulation._136;
 
 /*
 136. Single Number

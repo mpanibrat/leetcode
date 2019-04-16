@@ -1,4 +1,4 @@
-package com.panibrat.binarySearch._852;
+package com.panibrat.binary_search._852;
 
 /*
 852. Peak Index in a Mountain Array
@@ -25,12 +25,12 @@ A is a mountain, as defined above.
 
  */
 class Solution {
-  public int peakIndexInMountainArray(int[] A) {
+  public int peakIndexInMountainArray(int[] array) {
     int lo = 0;
-    int hi = A.length - 1;
+    int hi = array.length - 1;
     while (lo < hi) {
       int mid = lo + (hi - lo) / 2;
-      if (A[mid] < A[mid + 1]) {
+      if (array[mid] < array[mid + 1]) {
         lo = mid + 1;
       } else {
         hi = mid;

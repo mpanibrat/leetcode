@@ -40,15 +40,19 @@ import com.panibrat.tree.TreeNode;
 
 /**
  * Definition for a binary tree node.
+ * <pre>
+ * {@code
  * public class TreeNode {
- * int val;
- * TreeNode left;
- * TreeNode right;
- * TreeNode(int x) { val = x; }
+ *   int val;
+ *   TreeNode left;
+ *   TreeNode right;
+ *   TreeNode(int x) { val = x; }
  * }
+ * }
+ * </pre>
  */
 class Solution {
-  public boolean isSameTree(TreeNode p, TreeNode q) {
+  private boolean isSameTree(TreeNode p, TreeNode q) {
     if (p == null || q == null) return p == q;
     return p.val == q.val && isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
   }

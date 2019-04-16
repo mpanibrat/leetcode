@@ -25,6 +25,15 @@ You may assume that all words are consist of lowercase letters a-z.
 
 import com.panibrat.trie.TrieNode;
 
+/**
+ * Your WordDictionary object will be instantiated and called as such:
+ *
+ * <pre>{@code
+ * WordDictionary obj = new WordDictionary();
+ * obj.addWord(word);
+ * boolean param_2 = obj.search(word);
+ * }</pre>
+ */
 class WordDictionary {
   private static final char ANY_CHAR = '.';
 
@@ -66,10 +75,3 @@ class WordDictionary {
     return false;
   }
 }
-
-/**
- * Your WordDictionary object will be instantiated and called as such:
- * WordDictionary obj = new WordDictionary();
- * obj.addWord(word);
- * boolean param_2 = obj.search(word);
- */

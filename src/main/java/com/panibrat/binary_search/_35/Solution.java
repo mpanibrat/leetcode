@@ -1,4 +1,4 @@
-package com.panibrat.binarySearch._35;
+package com.panibrat.binary_search._35;
 
 /*
 35. Search Insert Position

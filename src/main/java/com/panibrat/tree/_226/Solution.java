@@ -28,15 +28,19 @@ import com.panibrat.tree.TreeNode;
 
 /**
  * Definition for a binary tree node.
+ * <pre>
+ * {@code
  * public class TreeNode {
- * int val;
- * TreeNode left;
- * TreeNode right;
- * TreeNode(int x) { val = x; }
+ *   int val;
+ *   TreeNode left;
+ *   TreeNode right;
+ *   TreeNode(int x) { val = x; }
  * }
+ * }
+ * </pre>
  */
 class Solution {
-  public TreeNode invertTree(TreeNode root) {
+  private TreeNode invertTree(TreeNode root) {
     if (root == null) return root;
     TreeNode tmp = root.left;
     root.left = root.right;
