@@ -1,7 +1,5 @@
 package com.panibrat.array._88;
 
-import java.util.Arrays;
-
 /*
 88. Merge Sorted Array
 
@@ -20,24 +18,19 @@ nums2 = [2,2,5,6],       n = 4
 Output: [1,2,2,2,3,5,6]
  */
 class Solution {
-  public void merge(int[] nums1, int m, int[] nums2, int n) {
-    int[] tmp = Arrays.copyOf(nums1, m);
-    int size = m + n;
-    int i = 0;
-    int j = 0;
-    int k = 0;
-    while (k < size && i < m && j < n) {
-      if (tmp[i] < nums2[j]) {
-        nums1[k++] = tmp[i++];
+  public void merge(int[] a, int m, int[] b, int n) {
+    int i = m - 1;
+    int j = n - 1;
+    int k = m + n - 1;
+    while (i >= 0 && j >= 0) {
+      if (a[i] > b[j]) {
+        a[k--] = a[i--];
       } else {
-        nums1[k++] = nums2[j++];
+        a[k--] = b[j--];
       }
     }
-    while (i < m && k < size) {
-      nums1[k++] = tmp[i++];
-    }
-    while (j < n && k < size) {
-      nums1[k++] = nums2[j++];
+    while (j >= 0) {
+      a[k--] = b[j--];
     }
   }
 }
