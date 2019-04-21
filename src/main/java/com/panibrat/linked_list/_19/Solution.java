@@ -24,30 +24,29 @@ import com.panibrat.linked_list.ListNode;
 
 /**
  * Definition for singly-linked list.
- * <pre>
- * {@code
+ *
+ * <pre>{@code
  * public class ListNode {
  *     int val;
  *     ListNode next;
  *     ListNode(int x) { val = x; }
  * }
- * }
- * </pre>
+ * }</pre>
  */
 class Solution {
   public ListNode removeNthFromEnd(ListNode head, int n) {
     ListNode dummy = new ListNode(0);
-    dummy.setNext(head);
+    dummy.next = head;
     ListNode prev = dummy;
-    ListNode curr = dummy.getNext();
+    ListNode curr = dummy.next;
     while (n-- > 0) {
-      curr = curr.getNext();
+      curr = curr.next;
     }
     while (curr != null) {
-      curr = curr.getNext();
-      prev = prev.getNext();
+      curr = curr.next;
+      prev = prev.next;
     }
-    prev.setNext(prev.getNext().getNext());
-    return dummy.getNext();
+    prev.next = prev.next.next;
+    return dummy.next;
   }
 }

@@ -30,16 +30,16 @@ class Solution {
     ListNode head = new ListNode(0);
     ListNode prev = head;
     while (l1 != null && l2 != null) {
-      if (l1.getVal() < l2.getVal()) {
-        prev.setNext(l1);
-        l1 = l1.getNext();
+      if (l1.val < l2.val) {
+        prev.next = l1;
+        l1 = l1.next;
       } else {
-        prev.setNext(l2);
-        l2 = l2.getNext();
+        prev.next = l2;
+        l2 = l2.next;
       }
-      prev = prev.getNext();
+      prev = prev.next;
     }
-    prev.setNext(l1 == null ? l2 : l1);
-    return head.getNext();
+    prev.next = l1 == null ? l2 : l1;
+    return head.next;
   }
 }
