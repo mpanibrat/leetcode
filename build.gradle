@@ -16,13 +16,11 @@ test {
     maxHeapSize = '1G'
 }
 
-task hooks {
-    doLast {
-        copy {
-            from "gradle/"
-            into ".git/hooks/"
-            include "pre-*"
-            fileMode 0755
-        }
+build {
+    copy {
+        from "gradle/"
+        into ".git/hooks/"
+        include "pre-*"
+        fileMode 0755
     }
 }

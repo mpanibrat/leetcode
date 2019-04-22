@@ -1,14 +1,5 @@
 #!/bin/bash
-echo `pwd`
 
-README=README.md
-
-echo '# leetcode
-Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
-```' > $README
-
-git log --pretty=format:'%s' | egrep '\d+\.' | sort -n >> $README
-
-echo '```' >> $README
+COMMITS=$(git log --pretty=format:'%s' | egrep '\d+\.' | sort -n)
+perl -0777 -i -pe 's/```.*```/```\n'"$COMMITS"'\n```/igs' README.md
 git add $README
-
