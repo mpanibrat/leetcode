@@ -1,0 +1,14 @@
+#!/bin/bash
+echo `pwd`
+
+README=README.md
+
+echo '# leetcode
+Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
+```' > $README
+
+git log --pretty=format:'%s' | egrep '\d+\.' | sort -n >> $README
+
+echo '```' >> $README
+git add $README
+

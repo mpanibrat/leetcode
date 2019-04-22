@@ -15,3 +15,14 @@ test {
     useJUnit()
     maxHeapSize = '1G'
 }
+
+task hooks {
+    doLast {
+        copy {
+            from "gradle/"
+            into ".git/hooks/"
+            include "pre-*"
+            fileMode 0755
+        }
+    }
+}
