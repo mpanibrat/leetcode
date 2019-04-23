@@ -21,3 +21,6 @@ hs_err_pid*
 
 /build/
 /out/
+
+# MacBook
+.DS_Store
