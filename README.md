@@ -33,6 +33,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 167. Two Sum II - Input array is sorted
 168. Excel Sheet Column Title
 169. Majority Element
+171. Excel Sheet Column Number
 198. House Robber
 206. Reverse Linked List
 207. Course Schedule
