@@ -35,9 +35,9 @@ class Solution {
   public String convertToTitle(int n) {
     StringBuilder builder = new StringBuilder();
     for (int i = n; i-- > 0; i /= BASE) {
-      builder.insert(0, getLetter(i));
+      builder.append(getLetter(i));
     }
-    return builder.toString();
+    return builder.reverse().toString();
   }
 
   private char getLetter(int x) {
