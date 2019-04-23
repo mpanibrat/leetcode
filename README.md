@@ -78,7 +78,6 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 755. Pour Water
 758. Bold Words in String
 766. Toeplitz Matrix
-766. Toeplitz Matrix
 783. Minimum Distance Between BST Nodes
 788. Rotated Digits
 800. Similar RGB Color
