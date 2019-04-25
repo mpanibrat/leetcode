@@ -34,6 +34,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 168. Excel Sheet Column Title
 169. Majority Element
 171. Excel Sheet Column Number
+172. Factorial Trailing Zeroes
 198. House Robber
 206. Reverse Linked List
 207. Course Schedule
