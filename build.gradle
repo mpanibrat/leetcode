@@ -18,9 +18,8 @@ test {
 
 build {
     copy {
-        from "gradle/"
+        from "gradle/hooks/"
         into ".git/hooks/"
-        include "pre-*"
         fileMode 0755
     }
 }
