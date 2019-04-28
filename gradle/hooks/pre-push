@@ -1,11 +1,11 @@
 #!/bin/bash
 
-echo
+README=README.md
 
 COMMITS=$(git log --pretty=format:'%s' | egrep '\d+\.' | uniq | sort -n)
-perl -0777 -i -pe 's/```.*```/```\n'"$COMMITS"'\n```/igs' README.md
+perl -0777 -i -pe 's/```.*```/```\n'"$COMMITS"'\n```/igs' $README
 
 git add $README
-git commit --no-verify -m "Update $README"
+git commit -m "Update $README"
 
 exit 0
