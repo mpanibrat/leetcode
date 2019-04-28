@@ -37,6 +37,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 172. Factorial Trailing Zeroes
 175. Combine Two Tables
 176. Second Highest Salary
+181. Employees Earning More Than Their Managers
 198. House Robber
 206. Reverse Linked List
 207. Course Schedule
