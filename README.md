@@ -38,6 +38,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 175. Combine Two Tables
 176. Second Highest Salary
 181. Employees Earning More Than Their Managers
+182. Duplicate Emails
 198. House Robber
 206. Reverse Linked List
 207. Course Schedule
