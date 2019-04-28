@@ -41,6 +41,8 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 182. Duplicate Emails
 183. Customers Who Never Order
 189. Rotate Array
+190. Reverse Bits
+191. Number of 1 Bits
 198. House Robber
 206. Reverse Linked List
 207. Course Schedule
