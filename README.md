@@ -43,6 +43,10 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 189. Rotate Array
 190. Reverse Bits
 191. Number of 1 Bits
+193. Valid Phone Numbers
+195. Tenth Line
+196. Delete Duplicate Emails
+197. Rising Temperature
 198. House Robber
 206. Reverse Linked List
 207. Course Schedule
