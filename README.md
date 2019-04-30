@@ -48,6 +48,8 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 196. Delete Duplicate Emails
 197. Rising Temperature
 198. House Robber
+202. Happy Number
+203. Remove Linked List Elements
 206. Reverse Linked List
 207. Course Schedule
 208. Implement Trie (Prefix Tree)
