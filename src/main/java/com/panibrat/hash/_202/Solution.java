@@ -22,7 +22,7 @@ Explanation:
  */
 class Solution {
 
-  public boolean isHappy(int n) {
+  public boolean isHappyUsingHash(int n) {
     if (n < 1) {
       return false;
     }
@@ -31,6 +31,19 @@ class Solution {
       n = getSquareSum(n);
     }
     return n == 1;
+  }
+
+  public boolean isHappy(int n) {
+    if (n < 1) {
+      return false;
+    }
+    int slow = getSquareSum(n);
+    int fast = getSquareSum(getSquareSum(n));
+    while (slow != fast) {
+      slow = getSquareSum(slow);
+      fast = getSquareSum(getSquareSum(fast));
+    }
+    return slow == 1;
   }
 
   private int getSquareSum(int n) {
