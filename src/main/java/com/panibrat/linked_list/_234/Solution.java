@@ -1,5 +1,9 @@
 package com.panibrat.linked_list._234;
 
+import com.panibrat.linked_list.ListNode;
+import java.util.Deque;
+import java.util.LinkedList;
+
 /*
 234. Palindrome Linked List
 
@@ -16,6 +20,18 @@ Output: true
 Follow up:
 Could you do it in O(n) time and O(1) space?
  */
-public class Solution {
+class Solution {
 
+  public boolean isPalindrome(ListNode head) {
+    Deque<Integer> stack = new LinkedList<>();
+    for (ListNode node = head; node != null; node = node.next) {
+      stack.push(node.val);
+    }
+    for (ListNode node = head; node != null; node = node.next) {
+      if (stack.pop() != node.val) {
+        return false;
+      }
+    }
+    return true;
+  }
 }
