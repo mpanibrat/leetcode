@@ -36,4 +36,16 @@ public class SolutionTest {
     ListNode list = singlyLinkedList(1, 2, 2, 1);
     assertTrue(new Solution().isPalindrome(list));
   }
+
+  @Test
+  public void isPalindrome_3() {
+    ListNode list = singlyLinkedList(1, 2, 1);
+    assertTrue(new Solution().isPalindrome(list));
+  }
+
+  @Test
+  public void isPalindrome_4() {
+    ListNode list = singlyLinkedList(1);
+    assertTrue(new Solution().isPalindrome(list));
+  }
 }

@@ -24,14 +24,22 @@ class Solution {
 
   public boolean isPalindrome(ListNode head) {
     Deque<Integer> stack = new LinkedList<>();
-    for (ListNode node = head; node != null; node = node.next) {
-      stack.push(node.val);
+    ListNode slow = head;
+    ListNode fast = head;
+    while (fast != null && fast.next != null) {
+      stack.push(slow.val);
+      slow = slow.next;
+      fast = fast.next.next;
     }
-    for (ListNode node = head; node != null; node = node.next) {
-      if (stack.pop() != node.val) {
+    if (fast != null) {
+      slow = slow.next; // skip middle
+    }
+    while (slow != null && !stack.isEmpty()) {
+      if (slow.val != stack.pop()) {
         return false;
       }
+      slow = slow.next;
     }
-    return true;
+    return stack.isEmpty();
   }
 }
