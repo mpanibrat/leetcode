@@ -63,6 +63,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 231. Power of Two
 232. Implement Queue using Stacks
 234. Palindrome Linked List
+235. Lowest Common Ancestor of a Binary Search Tree
 246. Strobogrammatic Number
 257. Binary Tree Paths
 270. Closest Binary Search Tree Value
