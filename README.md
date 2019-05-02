@@ -50,13 +50,18 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 198. House Robber
 202. Happy Number
 203. Remove Linked List Elements
+204. Count Primes
 206. Reverse Linked List
 207. Course Schedule
 208. Implement Trie (Prefix Tree)
 211. Add and Search Word - Data structure design
 213. House Robber II
+217. Contains Duplicate
+219. Contains Duplicate II
+225. Implement Stack using Queues
 226. Invert Binary Tree
 231. Power of Two
+232. Implement Queue using Stacks
 246. Strobogrammatic Number
 257. Binary Tree Paths
 270. Closest Binary Search Tree Value
