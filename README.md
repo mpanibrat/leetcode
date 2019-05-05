@@ -70,6 +70,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 270. Closest Binary Search Tree Value
 278. First Bad Version
 283. Move Zeroes
+290. Word Pattern
 293. Flip Game
 326. Power of Three (or any other base)
 342. Power of Four
