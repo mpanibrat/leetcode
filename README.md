@@ -66,7 +66,9 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 235. Lowest Common Ancestor of a Binary Search Tree
 246. Strobogrammatic Number
 257. Binary Tree Paths
+263. Ugly Number
 270. Closest Binary Search Tree Value
+278. First Bad Version
 283. Move Zeroes
 293. Flip Game
 326. Power of Three (or any other base)
