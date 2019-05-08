@@ -75,9 +75,11 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 303. Range Sum Query - Immutable
 326. Power of Three (or any other base)
 342. Power of Four
+344. Reverse String
 345. Reverse Vowels of a String
 347. Top K Frequent Elements
 349. Intersection of Two Arrays
+350. Intersection of Two Arrays II
 374. Guess Number Higher or Lower
 387. First Unique Character in a String
 389. Find the Difference
