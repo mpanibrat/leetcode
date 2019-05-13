@@ -80,6 +80,8 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 347. Top K Frequent Elements
 349. Intersection of Two Arrays
 350. Intersection of Two Arrays II
+367. Valid Perfect Square
+371. Sum of Two Integers
 374. Guess Number Higher or Lower
 387. First Unique Character in a String
 389. Find the Difference
