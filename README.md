@@ -83,6 +83,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 367. Valid Perfect Square
 371. Sum of Two Integers
 374. Guess Number Higher or Lower
+383. Ransom Note
 387. First Unique Character in a String
 389. Find the Difference
 401. Binary Watch
