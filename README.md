@@ -88,6 +88,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 389. Find the Difference
 401. Binary Watch
 404. Sum of Left Leaves
+405. Convert a Number to Hexadecimal
 409. Longest Palindrome
 415. Add Strings
 447. Number of Boomerangs
