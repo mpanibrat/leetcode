@@ -6,10 +6,6 @@ public class BinarySearchTree {
     return levelOrder(values, 0);
   }
 
-  public static TreeNode build(Integer[] values) {
-    return levelOrder(values, 0);
-  }
-
   private static TreeNode levelOrder(Integer[] arr, int i) {
     if (i >= arr.length || arr[i] == null) {
       return null;
