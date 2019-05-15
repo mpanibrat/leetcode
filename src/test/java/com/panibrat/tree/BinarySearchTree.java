@@ -2,6 +2,10 @@ package com.panibrat.tree;
 
 public class BinarySearchTree {
 
+  public static TreeNode of(Integer... values) {
+    return levelOrder(values, 0);
+  }
+
   public static TreeNode build(Integer[] values) {
     return levelOrder(values, 0);
   }
