@@ -21,7 +21,7 @@ Note:
 All given inputs are in lowercase letters a-z.
  */
 
-public class Solution {
+class Solution {
   public String longestCommonPrefix(String[] strs) {
     if (strs.length == 0) return "";
     int minLength = Integer.MAX_VALUE;

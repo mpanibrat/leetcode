@@ -47,7 +47,7 @@ You may assume there are no cycles anywhere in the entire linked structure.
 Your code should preferably run in O(n) time and use only O(1) memory.
 
  */
-public class Solution {
+class Solution {
 
   private static ListNode skip(ListNode node, int n) {
     while (node != null && n-- > 0) {

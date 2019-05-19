@@ -15,7 +15,7 @@ Example 2:
 Input: a = -2, b = 3
 Output: 1
  */
-public class Solution {
+class Solution {
 
   int getSum(int a, int b) {
     if (b == 0) {

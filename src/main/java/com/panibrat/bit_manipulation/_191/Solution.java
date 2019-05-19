@@ -34,7 +34,7 @@ Follow up:
 
 If this function is called many times, how would you optimize it?
  */
-public class Solution {
+class Solution {
 
   // you need to treat n as an unsigned value
   public int hammingWeight(int n) {

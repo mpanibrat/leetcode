@@ -38,7 +38,7 @@ return its bottom-up level order traversal as:
  * }
  * </code></pre>
  */
-public class Solution {
+class Solution {
   public List<List<Integer>> levelOrderBottom(TreeNode root) {
     List<List<Integer>> result = new ArrayList<>();
     if (root == null) {

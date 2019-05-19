@@ -40,7 +40,7 @@ Can you solve it using O(1) (i.e. constant) memory?
 
 import com.panibrat.linked_list.LinkedList.ListNode;
 
-public class Solution {
+class Solution {
 
   public boolean hasCycle(ListNode head) {
     if (head == null || head.next == null) {
