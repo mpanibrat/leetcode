@@ -38,16 +38,14 @@ public class SolutionTest {
   @Test
   public void removeElements_single() {
     ListNode list = singlyLinkedList(1);
-    ListNode expected = null;
     ListNode actual = new Solution().removeElements(list, 1);
-    assertThat(actual).isEqualToComparingFieldByFieldRecursively(expected);
+    assertThat(actual).isNull();
   }
 
   @Test
   public void removeElements_same() {
     ListNode list = singlyLinkedList(1, 1);
-    ListNode expected = null;
     ListNode actual = new Solution().removeElements(list, 1);
-    assertThat(actual).isEqualToComparingFieldByFieldRecursively(expected);
+    assertThat(actual).isNull();
   }
 }
