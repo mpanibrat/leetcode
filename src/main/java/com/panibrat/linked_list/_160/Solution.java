@@ -1,6 +1,6 @@
 package com.panibrat.linked_list._160;
 
-import com.panibrat.linked_list.ListNode;
+import com.panibrat.linked_list.LinkedList.ListNode;
 
 /*
 160. Intersection of Two Linked Lists

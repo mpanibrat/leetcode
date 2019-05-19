@@ -1,6 +1,6 @@
 package com.panibrat.linked_list._234;
 
-import com.panibrat.linked_list.ListNode;
+import com.panibrat.linked_list.LinkedList.ListNode;
 import java.util.Deque;
 import java.util.LinkedList;
 

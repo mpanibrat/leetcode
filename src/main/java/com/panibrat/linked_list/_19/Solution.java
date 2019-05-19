@@ -20,7 +20,7 @@ Could you do this in one pass?
 
  */
 
-import com.panibrat.linked_list.ListNode;
+import com.panibrat.linked_list.LinkedList.ListNode;
 
 /**
  * Definition for singly-linked list.

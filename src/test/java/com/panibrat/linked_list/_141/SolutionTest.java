@@ -3,7 +3,7 @@ package com.panibrat.linked_list._141;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import com.panibrat.linked_list.ListNode;
+import com.panibrat.linked_list.LinkedList.ListNode;
 import org.junit.Test;
 
 /*

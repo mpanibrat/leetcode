@@ -11,7 +11,7 @@ Input: 1->2->4, 1->3->4
 Output: 1->1->2->3->4->4
  */
 
-import com.panibrat.linked_list.ListNode;
+import com.panibrat.linked_list.LinkedList.ListNode;
 
 /**
  * Definition for singly-linked list.

@@ -1,6 +1,6 @@
 package com.panibrat.linked_list._203;
 
-import com.panibrat.linked_list.ListNode;
+import com.panibrat.linked_list.LinkedList.ListNode;
 
 /*
 203. Remove Linked List Elements

@@ -16,7 +16,7 @@ A linked list can be reversed either iteratively or recursively. Could you imple
 
  */
 
-import com.panibrat.linked_list.ListNode;
+import com.panibrat.linked_list.LinkedList.ListNode;
 
 /**
  * Definition for singly-linked list.

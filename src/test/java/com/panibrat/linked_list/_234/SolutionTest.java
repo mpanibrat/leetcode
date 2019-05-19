@@ -1,10 +1,10 @@
 package com.panibrat.linked_list._234;
 
-import static com.panibrat.linked_list.TestUtils.singlyLinkedList;
+import static com.panibrat.linked_list.LinkedList.singlyLinkedList;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import com.panibrat.linked_list.ListNode;
+import com.panibrat.linked_list.LinkedList.ListNode;
 import org.junit.Test;
 
 /*

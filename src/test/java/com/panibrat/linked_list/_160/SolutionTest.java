@@ -3,7 +3,7 @@ package com.panibrat.linked_list._160;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 
-import com.panibrat.linked_list.ListNode;
+import com.panibrat.linked_list.LinkedList.ListNode;
 import org.junit.Test;
 
 /*
