@@ -1,8 +1,8 @@
 package com.panibrat.tree;
 
-public class BinarySearchTree {
+public interface BinarySearchTree {
 
-  public static BinaryTree.TreeNode of(Integer... values) {
+  static BinaryTree.TreeNode of(Integer... values) {
     return levelOrder(values, 0);
   }
 
@@ -16,7 +16,7 @@ public class BinarySearchTree {
     return node;
   }
 
-  public static BinaryTree.TreeNode find(BinaryTree.TreeNode tree, int value) {
+  static BinaryTree.TreeNode find(BinaryTree.TreeNode tree, int value) {
     if (tree == null || tree.val == value) {
       return tree;
     }
