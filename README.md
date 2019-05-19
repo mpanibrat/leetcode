@@ -93,6 +93,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 414. Third Maximum Number
 415. Add Strings
 427. Construct Quad Tree
+429. N-ary Tree Level Order Traversal
 447. Number of Boomerangs
 448. Find All Numbers Disappeared in an Array
 453. Minimum Moves to Equal Array Elements
