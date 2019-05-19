@@ -34,7 +34,7 @@ Given the following tree [1,2,2,3,3,null,null,4,4]:
 Return false.
  */
 
-import com.panibrat.tree.TreeNode;
+import com.panibrat.tree.BinaryTree.TreeNode;
 
 /**
  * Definition for a binary tree node.

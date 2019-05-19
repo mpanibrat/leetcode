@@ -36,7 +36,7 @@ Input:     1         1
 Output: false
  */
 
-import com.panibrat.tree.TreeNode;
+import com.panibrat.tree.BinaryTree.TreeNode;
 
 /**
  * Definition for a binary tree node.

@@ -1,6 +1,6 @@
 package com.panibrat.tree._112;
 
-import com.panibrat.tree.TreeNode;
+import com.panibrat.tree.BinaryTree.TreeNode;
 
 /*
 112. Path Sum

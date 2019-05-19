@@ -1,6 +1,6 @@
 package com.panibrat.tree._235;
 
-import com.panibrat.tree.TreeNode;
+import com.panibrat.tree.BinaryTree.TreeNode;
 
 /*
 235. Lowest Common Ancestor of a Binary Search Tree

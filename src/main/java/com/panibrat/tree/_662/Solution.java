@@ -1,6 +1,6 @@
 package com.panibrat.tree._662;
 
-import com.panibrat.tree.TreeNode;
+import com.panibrat.tree.BinaryTree.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 

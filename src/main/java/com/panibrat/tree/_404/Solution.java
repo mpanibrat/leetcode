@@ -1,6 +1,6 @@
 package com.panibrat.tree._404;
 
-import com.panibrat.tree.TreeNode;
+import com.panibrat.tree.BinaryTree.TreeNode;
 
 /*
 404. Sum of Left Leaves

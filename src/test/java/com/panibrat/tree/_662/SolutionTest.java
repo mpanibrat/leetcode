@@ -3,7 +3,7 @@ package com.panibrat.tree._662;
 import static org.junit.Assert.assertEquals;
 
 import com.panibrat.tree.BinarySearchTree;
-import com.panibrat.tree.TreeNode;
+import com.panibrat.tree.BinaryTree.TreeNode;
 import org.junit.Test;
 
 /*

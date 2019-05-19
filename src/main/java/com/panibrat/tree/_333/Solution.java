@@ -26,7 +26,7 @@ Can you figure out ways to solve it with O(n) time complexity?
 
  */
 
-import com.panibrat.tree.TreeNode;
+import com.panibrat.tree.BinaryTree.TreeNode;
 
 /**
  * Definition for a binary tree node. public class TreeNode { int val; TreeNode left; TreeNode
