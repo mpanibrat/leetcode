@@ -2,7 +2,7 @@ package com.panibrat.tree._662;
 
 import static org.junit.Assert.assertEquals;
 
-import com.panibrat.tree.BinarySearchTree;
+import com.panibrat.tree.BinaryTree;
 import com.panibrat.tree.BinaryTree.TreeNode;
 import org.junit.Test;
 
@@ -73,25 +73,25 @@ public class SolutionTest {
 
   @Test
   public void widthOfBinaryTree_1() {
-    TreeNode root = BinarySearchTree.of(1, 3, 2, 5, 3, null, 9);
+    TreeNode root = BinaryTree.of(1, 3, 2, 5, 3, null, 9);
     assertEquals(4, new Solution().widthOfBinaryTree(root));
   }
 
   @Test
   public void widthOfBinaryTree_2() {
-    TreeNode root = BinarySearchTree.of(1, 3, null, 5, 3, null, null);
+    TreeNode root = BinaryTree.of(1, 3, null, 5, 3, null, null);
     assertEquals(2, new Solution().widthOfBinaryTree(root));
   }
 
   @Test
   public void widthOfBinaryTree_3() {
-    TreeNode root = BinarySearchTree.of(1, 3, 2, 5, null, null, null);
+    TreeNode root = BinaryTree.of(1, 3, 2, 5, null, null, null);
     assertEquals(2, new Solution().widthOfBinaryTree(root));
   }
 
   @Test
   public void widthOfBinaryTree_4() {
-    TreeNode root = BinarySearchTree
+    TreeNode root = BinaryTree
         .of(1, 3, 2, 5, null, null, 9, 6, null, null, null, null, null, null, 7);
     assertEquals(8, new Solution().widthOfBinaryTree(root));
   }

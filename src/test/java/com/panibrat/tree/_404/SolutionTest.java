@@ -2,7 +2,7 @@ package com.panibrat.tree._404;
 
 import static org.junit.Assert.assertEquals;
 
-import com.panibrat.tree.BinarySearchTree;
+import com.panibrat.tree.BinaryTree;
 import com.panibrat.tree.BinaryTree.TreeNode;
 import org.junit.Test;
 
@@ -25,7 +25,7 @@ public class SolutionTest {
 
   @Test
   public void sumOfLeftLeaves() {
-    TreeNode tree = BinarySearchTree.of(3, 9, 20, null, null, 15, 7);
+    TreeNode tree = BinaryTree.of(3, 9, 20, null, null, 15, 7);
     assertEquals(24, new Solution().sumOfLeftLeaves(tree));
   }
 }

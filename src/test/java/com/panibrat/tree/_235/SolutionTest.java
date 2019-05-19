@@ -3,6 +3,7 @@ package com.panibrat.tree._235;
 import static org.junit.Assert.assertEquals;
 
 import com.panibrat.tree.BinarySearchTree;
+import com.panibrat.tree.BinaryTree;
 import com.panibrat.tree.BinaryTree.TreeNode;
 import org.junit.Test;
 
@@ -39,7 +40,7 @@ public class SolutionTest {
 
   @Test
   public void lowestCommonAncestor_1() {
-    TreeNode tree = BinarySearchTree.of(6, 2, 8, 0, 4, 7, 9, null, null, 3, 5);
+    TreeNode tree = BinaryTree.of(6, 2, 8, 0, 4, 7, 9, null, null, 3, 5);
     TreeNode p = BinarySearchTree.find(tree, 2);
     TreeNode q = BinarySearchTree.find(tree, 8);
     TreeNode expected = BinarySearchTree.find(tree, 6);
@@ -48,7 +49,7 @@ public class SolutionTest {
 
   @Test
   public void lowestCommonAncestor_2() {
-    TreeNode tree = BinarySearchTree.of(6, 2, 8, 0, 4, 7, 9, null, null, 3, 5);
+    TreeNode tree = BinaryTree.of(6, 2, 8, 0, 4, 7, 9, null, null, 3, 5);
     TreeNode p = BinarySearchTree.find(tree, 2);
     TreeNode q = BinarySearchTree.find(tree, 4);
     TreeNode expected = BinarySearchTree.find(tree, 2);
