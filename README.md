@@ -90,7 +90,9 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 404. Sum of Left Leaves
 405. Convert a Number to Hexadecimal
 409. Longest Palindrome
+414. Third Maximum Number
 415. Add Strings
+427. Construct Quad Tree
 447. Number of Boomerangs
 448. Find All Numbers Disappeared in an Array
 453. Minimum Moves to Equal Array Elements
