@@ -96,6 +96,8 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 429. N-ary Tree Level Order Traversal
 434. Number of Segments in a String
 437. Path Sum III
+441. Arranging Coins
+443. String Compression
 447. Number of Boomerangs
 448. Find All Numbers Disappeared in an Array
 453. Minimum Moves to Equal Array Elements
