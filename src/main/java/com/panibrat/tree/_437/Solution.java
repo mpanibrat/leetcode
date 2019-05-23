@@ -1,6 +1,8 @@
 package com.panibrat.tree._437;
 
 import com.panibrat.tree.BinaryTree.TreeNode;
+import java.util.HashMap;
+import java.util.Map;
 
 /*
 437. Path Sum III
@@ -33,20 +35,42 @@ Return 3. The paths that sum to 8 are:
  */
 class Solution {
 
-  public int pathSum(TreeNode root, int sum) {
+  /* O(n^2) DFS */
+  public int pathSumBruteforce(TreeNode root, int sum) {
     if (root == null) {
       return 0;
     }
-    return paths(root, sum) + pathSum(root.left, sum) + pathSum(root.right, sum);
+    return dfs(root, sum) + pathSumBruteforce(root.left, sum) + pathSumBruteforce(root.right, sum);
   }
 
-  private int paths(TreeNode node, int sum) {
+  private int dfs(TreeNode node, int sum) {
     if (node == null) {
       return 0;
     }
-    if (node.val == sum) {
-      return 1;
+    int current = node.val == sum ? 1 : 0;
+    return current + dfs(node.left, sum - node.val) + dfs(node.right, sum - node.val);
+  }
+
+  /* O(n) Cumulative sum with HashMap counter */
+  public int pathSum(TreeNode root, int sum) {
+    Map<Integer, Integer> sumCount = new HashMap<>();
+    sumCount.put(0, 1);
+    return helper(root, sumCount, 0, sum);
+  }
+
+  private int helper(TreeNode node, Map<Integer, Integer> sumCount, int current, int target) {
+    if (node == null) {
+      return 0;
     }
-    return paths(node.left, sum - node.val) + paths(node.right, sum - node.val);
+    int sum = current + node.val;
+    int count = sumCount.getOrDefault(sum - target, 0);
+
+    int tmp = sumCount.getOrDefault(sum, 0);
+    sumCount.put(sum, tmp + 1);
+    int left = helper(node.left, sumCount, sum, target);
+    int right = helper(node.right, sumCount, sum, target);
+    sumCount.put(sum, tmp);
+
+    return count + left + right;
   }
 }

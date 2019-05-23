@@ -38,8 +38,20 @@ Return 3. The paths that sum to 8 are:
 public class SolutionTest {
 
   @Test
-  public void pathSum() {
+  public void pathSum_1() {
     TreeNode tree = BinaryTree.of(10, 5, -3, 3, 2, null, 11, 3, -2, null, 1);
     assertEquals(3, new Solution().pathSum(tree, 8));
+  }
+
+  @Test
+  public void pathSum_2() {
+    TreeNode tree = BinaryTree.of(1, -2, -3, 1, 3, -2, null, -1);
+    assertEquals(4, new Solution().pathSum(tree, -1));
+  }
+
+  @Test
+  public void pathSum_3() {
+    TreeNode tree = BinaryTree.of(1);
+    assertEquals(0, new Solution().pathSum(tree, 0));
   }
 }
