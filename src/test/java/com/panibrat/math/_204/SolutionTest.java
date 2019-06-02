@@ -27,12 +27,10 @@ public class SolutionTest {
     assertEquals(0, new Solution().countPrimes(2));
   }
 
-
   @Test
   public void countPrimes_1() {
     assertEquals(0, new Solution().countPrimes(1));
   }
-
 
   @Test
   public void countPrimes_3() {

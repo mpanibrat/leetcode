@@ -1,6 +1,5 @@
 package com.panibrat.tree._427;
 
-
 import com.panibrat.tree.QuadTree.Node;
 
 /*
@@ -33,7 +32,9 @@ class Solution {
   }
 
   private static Node subdivide(int[][] grid, int size, int row, int col) {
-    return new Node(false, false,
+    return new Node(
+        false,
+        false,
         helper(grid, size, row, col),
         helper(grid, size, row, col + size),
         helper(grid, size, row + size, col),

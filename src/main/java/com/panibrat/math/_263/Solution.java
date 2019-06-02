@@ -32,7 +32,7 @@ Note:
  */
 class Solution {
 
-  private static final int[] UGLY_PRIMES = new int[]{2, 3, 5};
+  private static final int[] UGLY_PRIMES = new int[] {2, 3, 5};
 
   private static int removeFactor(int number, int prime) {
     while (number >= prime && number % prime == 0) {

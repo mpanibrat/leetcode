@@ -30,16 +30,16 @@ public class SolutionTest {
 
   @Test
   public void thirdMax_1() {
-    assertEquals(1, new Solution().thirdMax(new int[]{3, 2, 1}));
+    assertEquals(1, new Solution().thirdMax(new int[] {3, 2, 1}));
   }
 
   @Test
   public void thirdMax_2() {
-    assertEquals(2, new Solution().thirdMax(new int[]{1, 2}));
+    assertEquals(2, new Solution().thirdMax(new int[] {1, 2}));
   }
 
   @Test
   public void thirdMax_3() {
-    assertEquals(1, new Solution().thirdMax(new int[]{2, 2, 3, 1}));
+    assertEquals(1, new Solution().thirdMax(new int[] {2, 2, 3, 1}));
   }
 }

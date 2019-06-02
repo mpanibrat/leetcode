@@ -35,15 +35,15 @@ public class SolutionTest {
 
   @Test
   public void intersect_1() {
-    int[] intersect = new Solution().intersect(new int[]{1, 2, 2, 1}, new int[]{2, 2});
+    int[] intersect = new Solution().intersect(new int[] {1, 2, 2, 1}, new int[] {2, 2});
     Arrays.sort(intersect);
-    assertArrayEquals(intersect, new int[]{2, 2});
+    assertArrayEquals(intersect, new int[] {2, 2});
   }
 
   @Test
   public void intersect_2() {
-    int[] intersect = new Solution().intersect(new int[]{4, 9, 5}, new int[]{9, 4, 9, 8, 4});
+    int[] intersect = new Solution().intersect(new int[] {4, 9, 5}, new int[] {9, 4, 9, 8, 4});
     Arrays.sort(intersect);
-    assertArrayEquals(intersect, new int[]{4, 9});
+    assertArrayEquals(intersect, new int[] {4, 9});
   }
 }

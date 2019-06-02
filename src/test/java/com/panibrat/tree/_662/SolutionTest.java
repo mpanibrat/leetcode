@@ -91,8 +91,8 @@ public class SolutionTest {
 
   @Test
   public void widthOfBinaryTree_4() {
-    TreeNode root = BinaryTree
-        .of(1, 3, 2, 5, null, null, 9, 6, null, null, null, null, null, null, 7);
+    TreeNode root =
+        BinaryTree.of(1, 3, 2, 5, null, null, 9, 6, null, null, null, null, null, null, 7);
     assertEquals(8, new Solution().widthOfBinaryTree(root));
   }
 }

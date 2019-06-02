@@ -35,31 +35,23 @@ class MyQueue {
   private Deque<Integer> input;
   private Deque<Integer> output;
 
-  /**
-   * Initialize your data structure here.
-   */
+  /** Initialize your data structure here. */
   public MyQueue() {
     input = new LinkedList<>();
     output = new LinkedList<>();
   }
 
-  /**
-   * Push element x to the back of queue.
-   */
+  /** Push element x to the back of queue. */
   public void push(int x) {
     input.push(x);
   }
 
-  /**
-   * Removes the element from in front of queue and returns that element.
-   */
+  /** Removes the element from in front of queue and returns that element. */
   public int pop() {
     return loaded().pop();
   }
 
-  /**
-   * Get the front element.
-   */
+  /** Get the front element. */
   public int peek() {
     return loaded().peek();
   }
@@ -73,9 +65,7 @@ class MyQueue {
     return output;
   }
 
-  /**
-   * Returns whether the queue is empty.
-   */
+  /** Returns whether the queue is empty. */
   public boolean empty() {
     return input.isEmpty() && output.isEmpty();
   }

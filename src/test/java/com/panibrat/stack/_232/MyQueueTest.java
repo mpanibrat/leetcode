@@ -36,7 +36,7 @@ Notes:
 public class MyQueueTest {
 
   @Test
-  public void test() {
+  public void testQueue() {
     MyQueue queue = new MyQueue();
     assertTrue(queue.empty());
     queue.push(1);

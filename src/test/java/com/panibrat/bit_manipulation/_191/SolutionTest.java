@@ -42,14 +42,14 @@ public class SolutionTest {
 
   @Test
   public void hammingWeight_1() {
-    assertEquals(3,
-        new Solution().hammingWeight(Integer.parseInt("00000000000000000000000000001011", 2)));
+    assertEquals(
+        3, new Solution().hammingWeight(Integer.parseInt("00000000000000000000000000001011", 2)));
   }
 
   @Test
   public void hammingWeight_2() {
-    assertEquals(1,
-        new Solution().hammingWeight(Integer.parseInt("00000000000000000000000010000000", 2)));
+    assertEquals(
+        1, new Solution().hammingWeight(Integer.parseInt("00000000000000000000000010000000", 2)));
   }
 
   @Test

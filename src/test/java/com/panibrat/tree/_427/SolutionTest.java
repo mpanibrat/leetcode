@@ -11,7 +11,7 @@ public class SolutionTest {
 
   @Test
   public void construct() {
-    int[][] grid = new int[][]{{1}};
+    int[][] grid = new int[][] {{1}};
     Node node = new Solution().construct(grid);
     assertTrue(node.isLeaf);
     assertTrue(node.val);
@@ -21,10 +21,9 @@ public class SolutionTest {
     assertNull(node.bottomRight);
   }
 
-
   @Test
   public void construct_4() {
-    int[][] grid = new int[][]{{1, 1}, {1, 0}};
+    int[][] grid = new int[][] {{1, 1}, {1, 0}};
     Node node = new Solution().construct(grid);
     assertFalse(node.isLeaf);
     assertTrue(node.topLeft.isLeaf);

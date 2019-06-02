@@ -25,13 +25,13 @@ public class SolutionTest {
 
   @Test
   public void majorityElement_1() {
-    int[] array = new int[]{3, 2, 3};
+    int[] array = new int[] {3, 2, 3};
     assertEquals(3, new Solution().majorityElement(array));
   }
 
   @Test
   public void majorityElement_2() {
-    int[] array = new int[]{2, 2, 1, 1, 1, 2, 2};
+    int[] array = new int[] {2, 2, 1, 1, 1, 2, 2};
     assertEquals(2, new Solution().majorityElement(array));
   }
 }

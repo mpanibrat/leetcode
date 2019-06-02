@@ -36,7 +36,7 @@ public class SolutionTest {
 
   @Test
   public void findContentChildren() {
-    assertEquals(1, new Solution().findContentChildren(new int[]{1, 2, 3}, new int[]{1, 1}));
-    assertEquals(2, new Solution().findContentChildren(new int[]{1, 2}, new int[]{1, 2, 3}));
+    assertEquals(1, new Solution().findContentChildren(new int[] {1, 2, 3}, new int[] {1, 1}));
+    assertEquals(2, new Solution().findContentChildren(new int[] {1, 2}, new int[] {1, 2, 3}));
   }
 }

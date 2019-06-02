@@ -15,15 +15,14 @@ import com.panibrat.linked_list.LinkedList.ListNode;
 
 /**
  * Definition for singly-linked list.
- * <pre>
- * {@code
+ *
+ * <pre>{@code
  * public class ListNode {
  *     int val;
  *     ListNode next;
  *     ListNode(int x) { val = x; }
  * }
- * }
- * </pre>
+ * }</pre>
  */
 class Solution {
   public ListNode mergeTwoLists(ListNode l1, ListNode l2) {

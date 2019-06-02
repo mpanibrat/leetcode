@@ -27,7 +27,6 @@ class Solution {
           primes[j] = false;
         }
       }
-
     }
     return count;
   }

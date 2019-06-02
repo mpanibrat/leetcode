@@ -46,5 +46,4 @@ public class MyStackTest {
     assertEquals(2, stack.pop());
     assertFalse(stack.empty());
   }
-
 }
