@@ -105,8 +105,11 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 459. Repeated Substring Pattern
 461. Hamming Distance
 475. Heaters
+476. Number Complement
 482. License Key Formatting
 485. Max Consecutive Ones
+492. Construct the Rectangle
+496. Next Greater Element I
 501. Find Mode in Binary Search Tree
 506. Relative Ranks
 520. Detect Capital
