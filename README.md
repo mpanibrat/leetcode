@@ -114,10 +114,12 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 501. Find Mode in Binary Search Tree
 504. Base 7
 506. Relative Ranks
+507. Perfect Number
 509. Fibonacci Number
 520. Detect Capital
 521. Longest Uncommon Subsequence I
 530. Minimum Absolute Difference in BST (same as 738)
+532. K-diff Pairs in an Array
 541. Reverse String II
 543. Diameter of Binary Tree
 551. Student Attendance Record I
