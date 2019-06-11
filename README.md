@@ -120,6 +120,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 521. Longest Uncommon Subsequence I
 530. Minimum Absolute Difference in BST (same as 738)
 532. K-diff Pairs in an Array
+538. Convert BST to Greater Tree
 541. Reverse String II
 543. Diameter of Binary Tree
 551. Student Attendance Record I
