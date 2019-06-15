@@ -26,4 +26,18 @@ public interface BinaryTree {
       val = x;
     }
   }
+
+  static String toString(TreeNode node) {
+    return write(new StringBuilder(), "", node).toString();
+  }
+
+  private static StringBuilder write(StringBuilder builder, String prefix, TreeNode node) {
+    if (node == null) {
+      return builder;
+    }
+    write(builder, prefix + "     ", node.right);
+    builder.append(prefix).append("|-- ").append(node.val).append("\n");
+    write(builder, prefix + "     ", node.left);
+    return builder;
+  }
 }
