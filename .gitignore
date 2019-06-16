@@ -18,7 +18,10 @@ hs_err_pid*
 # Env
 .idea/
 .gradle/
+.project
+.settings/
 
+/bin/
 /build/
 /out/
 
