@@ -124,6 +124,9 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 541. Reverse String II
 543. Diameter of Binary Tree
 551. Student Attendance Record I
+557. Reverse Words in a String III
+558. Quad Tree Intersection
+559. Maximum Depth of N-ary Tree
 561. Array Partition I
 643. Maximum Average Subarray I
 653. Two Sum IV - Input is a BST
