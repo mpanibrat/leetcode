@@ -128,6 +128,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 558. Quad Tree Intersection
 559. Maximum Depth of N-ary Tree
 561. Array Partition I
+563. Binary Tree Tilt
 643. Maximum Average Subarray I
 653. Two Sum IV - Input is a BST
 662. Maximum Width of Binary Tree
