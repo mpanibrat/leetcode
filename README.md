@@ -86,6 +86,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 383. Ransom Note
 387. First Unique Character in a String
 389. Find the Difference
+400. Nth Digit
 401. Binary Watch
 404. Sum of Left Leaves
 405. Convert a Number to Hexadecimal
@@ -129,6 +130,8 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 559. Maximum Depth of N-ary Tree
 561. Array Partition I
 563. Binary Tree Tilt
+566. Reshape the Matrix
+572. Subtree of Another Tree
 643. Maximum Average Subarray I
 653. Two Sum IV - Input is a BST
 662. Maximum Width of Binary Tree
