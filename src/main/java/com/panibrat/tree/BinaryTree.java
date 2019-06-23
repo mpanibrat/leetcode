@@ -1,5 +1,8 @@
 package com.panibrat.tree;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 public interface BinaryTree {
 
   static BinaryTree.TreeNode of(Integer... values) {
@@ -27,17 +30,12 @@ public interface BinaryTree {
     }
   }
 
-  static String toString(TreeNode node) {
-    return write(new StringBuilder(), "", node).toString();
-  }
-
-  private static StringBuilder write(StringBuilder builder, String prefix, TreeNode node) {
-    if (node == null) {
-      return builder;
-    }
-    write(builder, prefix + "     ", node.right);
-    builder.append(prefix).append("|-- ").append(node.val).append("\n");
-    write(builder, prefix + "     ", node.left);
-    return builder;
+  static void prettyPrint(TreeNode root) {
+    TreePrinter.print(
+        root,
+        "",
+        n -> n != null ? Arrays.asList(n.right, n.left) : Collections.emptyList(),
+        n -> n != null ? Integer.toString(n.val) : "x",
+        true);
   }
 }
