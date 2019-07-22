@@ -150,4 +150,8 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 812. Largest Triangle Area
 895. Maximum Frequency Stack
 989. Add to Array-Form of Integer
+1114. Print in Order
+1115. Print FooBar Alternately
+1116. Print Zero Even Odd
+1117. Building H2O
 ```
