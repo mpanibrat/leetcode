@@ -135,6 +135,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 575. Distribute Candies
 581. Shortest Unsorted Continuous Subarray
 589. N-ary Tree Preorder Traversal
+590. N-ary Tree Postorder Traversal
 643. Maximum Average Subarray I
 653. Two Sum IV - Input is a BST
 662. Maximum Width of Binary Tree
