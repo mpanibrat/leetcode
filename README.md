@@ -140,6 +140,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 653. Two Sum IV - Input is a BST
 662. Maximum Width of Binary Tree
 697. Degree of an Array
+709. To Lower Case
 734. Sentence Similarity
 747. Largest Number At Least Twice of Others
 755. Pour Water
