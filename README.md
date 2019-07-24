@@ -151,6 +151,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 800. Similar RGB Color
 812. Largest Triangle Area
 895. Maximum Frequency Stack
+938. Range Sum of BST
 989. Add to Array-Form of Integer
 1114. Print in Order
 1115. Print FooBar Alternately
