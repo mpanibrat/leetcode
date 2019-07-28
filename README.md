@@ -136,6 +136,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 581. Shortest Unsorted Continuous Subarray
 589. N-ary Tree Preorder Traversal
 590. N-ary Tree Postorder Traversal
+595. Big Countries
 643. Maximum Average Subarray I
 653. Two Sum IV - Input is a BST
 662. Maximum Width of Binary Tree
@@ -150,7 +151,9 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 788. Rotated Digits
 800. Similar RGB Color
 812. Largest Triangle Area
+832. Flipping an Image
 895. Maximum Frequency Stack
+905. Sort Array By Parity
 938. Range Sum of BST
 989. Add to Array-Form of Integer
 1021. Remove Outermost Parentheses
