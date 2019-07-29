@@ -155,6 +155,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 895. Maximum Frequency Stack
 905. Sort Array By Parity
 938. Range Sum of BST
+977. Squares of a Sorted Array
 989. Add to Array-Form of Integer
 1021. Remove Outermost Parentheses
 1108. Defanging an IP Address
