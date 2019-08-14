@@ -88,6 +88,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 389. Find the Difference
 400. Nth Digit
 401. Binary Watch
+402. Remove K Digits
 404. Sum of Left Leaves
 405. Convert a Number to Hexadecimal
 409. Longest Palindrome
@@ -142,6 +143,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 662. Maximum Width of Binary Tree
 697. Degree of an Array
 709. To Lower Case
+729. My Calendar I
 734. Sentence Similarity
 747. Largest Number At Least Twice of Others
 755. Pour Water
