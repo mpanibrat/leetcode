@@ -73,6 +73,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 290. Word Pattern
 293. Flip Game
 303. Range Sum Query - Immutable
+307. Range Sum Query - Mutable
 326. Power of Three (or any other base)
 342. Power of Four
 344. Reverse String
