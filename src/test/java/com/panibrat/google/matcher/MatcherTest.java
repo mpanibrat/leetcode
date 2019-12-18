@@ -4,13 +4,20 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import com.panibrat.google.match.DfaMatcherImpl;
 import com.panibrat.google.match.Matcher;
+import org.junit.Before;
 import org.junit.Test;
 
 public class MatcherTest {
 
+  private Matcher matcher;
+
+  @Before
+  public void setup() {
+    matcher = new DfaMatcherImpl();
+  }
+
   @Test
   public void matchLiteral() {
-    Matcher matcher = new DfaMatcherImpl();
     matcher.addFilter("test");
     assertThat(matcher.matches("test")).isTrue();
     assertThat(matcher.matches("tes")).isFalse();
@@ -21,7 +28,6 @@ public class MatcherTest {
 
   @Test
   public void matchPrefix() {
-    Matcher matcher = new DfaMatcherImpl();
     matcher.addFilter("t*");
     assertThat(matcher.matches("test")).isTrue();
     assertThat(matcher.matches("t")).isTrue();
@@ -32,7 +38,6 @@ public class MatcherTest {
 
   @Test
   public void matchSuffix() {
-    Matcher matcher = new DfaMatcherImpl();
     matcher.addFilter("*t");
     assertThat(matcher.matches("test")).isTrue();
     assertThat(matcher.matches("t")).isTrue();
@@ -43,7 +48,6 @@ public class MatcherTest {
 
   @Test
   public void match() {
-    Matcher matcher = new DfaMatcherImpl();
     matcher.addFilter("t*t");
     assertThat(matcher.matches("test")).isTrue();
     assertThat(matcher.matches("t")).isFalse();
@@ -55,7 +59,6 @@ public class MatcherTest {
 
   @Test
   public void matchAny() {
-    Matcher matcher = new DfaMatcherImpl();
     matcher.addFilter("*");
     assertThat(matcher.matches("test")).isTrue();
     assertThat(matcher.matches("t")).isTrue();
@@ -67,7 +70,6 @@ public class MatcherTest {
 
   @Test
   public void matchPatterns() {
-    Matcher matcher = new DfaMatcherImpl();
     matcher.addFilter("maks*@google");
     matcher.addFilter("*doe@google");
     matcher.addFilter("john.doe@*");
@@ -80,7 +82,6 @@ public class MatcherTest {
 
   @Test
   public void matchMultiWildcardPatterns() {
-    Matcher matcher = new DfaMatcherImpl();
     matcher.addFilter("maks*@g*gle");
     matcher.addFilter("*doe@google");
     matcher.addFilter("john.doe@*");
