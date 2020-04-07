@@ -146,6 +146,7 @@ Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 709. To Lower Case
 729. My Calendar I
 734. Sentence Similarity
+743. Network Delay Time
 747. Largest Number At Least Twice of Others
 755. Pour Water
 758. Bold Words in String
