@@ -1,7 +1,7 @@
 # leetcode
-Possible solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
+Solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 
-#### Content 
+#### Content
 ```
 5. Longest Palindromic Substring
 7. Reverse Integer

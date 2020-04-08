@@ -33,30 +33,30 @@ Note:
  */
 class Solution {
   public int networkDelayTime(int[][] times, int N, int K) {
-    Map<Integer, List<Edge>> graph = new HashMap<>();
+    Map<Integer, List<Travel>> graph = new HashMap<>();
     for (int i = 1; i <= N; i++) {
       graph.put(i, new ArrayList<>());
     }
     for (int[] time : times) {
-      graph.get(time[0]).add(new Edge(time[1], time[2]));
+      graph.get(time[0]).add(new Travel(time[1], time[2]));
     }
 
-    PriorityQueue<Edge> queue = new PriorityQueue<>(Comparator.comparing(a -> a.distance));
-    queue.add(new Edge(K, 0));
+    PriorityQueue<Travel> queue = new PriorityQueue<>(Comparator.comparing(Travel::time));
+    queue.add(new Travel(K, 0));
 
     Set<Integer> visited = new HashSet<>();
     int delay = 0;
 
     while (!queue.isEmpty()) {
-      Edge edge = queue.remove();
-      if (!visited.add(edge.node)) {
+      Travel travel = queue.remove();
+      if (!visited.add(travel.node)) {
         continue; // already visited
       }
 
-      delay = edge.distance;
-      if (graph.containsKey(edge.node)) {
-        for (Edge next : graph.get(edge.node)) {
-          queue.add(new Edge(next.node, edge.distance + next.distance));
+      delay = travel.time;
+      if (graph.containsKey(travel.node)) {
+        for (Travel next : graph.get(travel.node)) {
+          queue.add(new Travel(next.node, travel.time + next.time));
         }
       }
     }
@@ -64,13 +64,17 @@ class Solution {
     return visited.size() == N ? delay : -1;
   }
 
-  private static class Edge {
+  private static class Travel {
     private final int node;
-    private final int distance;
+    private final int time;
 
-    Edge(int node, int distance) {
+    Travel(int node, int time) {
       this.node = node;
-      this.distance = distance;
+      this.time = time;
+    }
+
+    int time() {
+      return this.time;
     }
   }
 }
