@@ -156,6 +156,7 @@ Solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 800. Similar RGB Color
 812. Largest Triangle Area
 832. Flipping an Image
+844. Backspace String Compare
 895. Maximum Frequency Stack
 905. Sort Array By Parity
 938. Range Sum of BST
