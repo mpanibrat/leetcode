@@ -14,6 +14,7 @@ Solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 27. Remove Element
 35. Search Insert Position
 38. Count and Say
+49. Group Anagrams
 53. Maximum Subarray
 54. Spiral Matrix
 66. Plus One
@@ -157,6 +158,7 @@ Solutions to [LeetCode](https://leetcode.com/problemset/all/) problems.
 812. Largest Triangle Area
 832. Flipping an Image
 844. Backspace String Compare
+876. Middle of the Linked List
 895. Maximum Frequency Stack
 905. Sort Array By Parity
 938. Range Sum of BST
