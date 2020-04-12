@@ -8,8 +8,7 @@ public class MinLenAfterKCharsRemovedTest {
 
   @Test
   public void solution() {
-    MinLenAfterKCharsRemoved task =
-        new MinLenAfterKCharsRemoved();
+    MinLenAfterKCharsRemoved task = new MinLenAfterKCharsRemoved();
     assertThat(task.solution("ABBBCCDDCCC", 3)).isEqualTo(5);
     assertThat(task.solution("AAAAAAAAAAABXXAAAAAAAAAA", 3)).isEqualTo(3);
     assertThat(task.solution("ABCDDDEFG", 2)).isEqualTo(6);

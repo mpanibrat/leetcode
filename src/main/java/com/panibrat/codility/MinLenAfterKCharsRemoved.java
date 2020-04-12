@@ -22,41 +22,92 @@ Write an efficient algorithm for the following assumptions:
  - string S consists only of uppercase letters (A-Z).
  */
 public class MinLenAfterKCharsRemoved {
+
   public int solution(String S, int K) {
     if (S.length() <= K) {
       return 0;
     }
-    char[] str = S.toCharArray();
+    Node node = compress(S);
     if (K == 0) {
-      return compress(str);
+      return getTotalSize(node);
     }
     int min = Integer.MAX_VALUE;
-    char[] array = new char[str.length - K];
-    for (int i = 0; i + K < str.length; i++) {
-      copyArray(str, array, i, i + K);
-      min = Math.min(min, compress(array));
+    Node stub = new Node('#', 0);
+    for (int i = 0; i + K <= S.length(); i++) {
+      min = Math.min(min, modifiedSize(stub, node, i, K));
     }
     return min;
   }
 
-  void copyArray(char[] src, char[] dst, int excludeStart, int excludeEnd) {
-    for (int i = 0, j = 0; i < src.length && j < dst.length; i++, j++) {
-      while (i >= excludeStart && i < excludeEnd) ++i;
-      dst[j] = src[i];
+  private static Node compress(String str) {
+    Node head = new Node('0', 0);
+    Node node = head;
+    int index = 0;
+    while (index < str.length()) {
+      char letter = str.charAt(index++);
+      int count = 1;
+      while (index < str.length() && letter == str.charAt(index)) {
+        count += 1;
+        index += 1;
+      }
+      node.next = new Node(letter, count);
+      node = node.next;
     }
+    return head.next;
   }
 
-  private int compress(char[] array) {
-    int size = 0;
-    int count = 1;
-    for (int i = 1; i < array.length; i++) {
-      if (array[i] == array[i - 1]) {
-        count += 1;
-      } else {
-        size += 1 + (count > 1 ? Integer.toString(count).length() : 0);
-        count = 1;
-      }
+  private static int modifiedSize(Node prev, Node node, int include, int remove) {
+    if (node == null) {
+      return 0;
     }
-    return size + 1 + (count > 1 ? Integer.toString(count).length() : 0);
+    if (include >= node.count) {
+      return getSize(node) + modifiedSize(node, node.next, include - node.count, remove);
+    }
+    if (include > 0) {
+      Node current = new Node(node.letter, include);
+      Node next = new Node(node.letter, node.count - include, node.next);
+      return getSize(current) + modifiedSize(current, next, 0, remove);
+    }
+    if (remove >= node.count) {
+      return modifiedSize(prev, node.next, 0, remove - node.count);
+    }
+    if (remove > 0) {
+      return modifiedSize(prev, new Node(node.letter, node.count - remove, node.next), 0, 0);
+    }
+    if (prev.letter == node.letter) {
+      Node current = new Node(node.letter, node.count + prev.count, node.next);
+      return getSize(current) - getSize(prev) + modifiedSize(current, node.next, 0, 0);
+    }
+    return getTotalSize(node);
+  }
+
+  private static int getTotalSize(Node node) {
+    int total = 0;
+    while (node != null) {
+      total += getSize(node);
+      node = node.next;
+    }
+    return total;
+  }
+
+  private static int getSize(Node node) {
+    return node.count > 1 ? Integer.toString(node.count).length() + 1 : 1;
+  }
+
+  private static class Node {
+    final char letter;
+    final int count;
+    Node next;
+
+    Node(char letter, int count) {
+      this.letter = letter;
+      this.count = count;
+    }
+
+    Node(char letter, int count, Node next) {
+      this.letter = letter;
+      this.count = count;
+      this.next = next;
+    }
   }
 }
